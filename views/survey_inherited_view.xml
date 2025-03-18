@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="survey_survey_view_kanban_inherit" model="ir.ui.view">
+        <field name="model">survey.survey</field>
+        <field name="inherit_id" ref="survey.survey_survey_view_kanban"/>
+        <field name="arch" type="xml">
+           <xpath expr="//button[@name='action_send_survey']" position="before">
+                  <button name="%(action_survey_partner_wizard)d" string="Start Survey" type="action"  class="btn btn-secondary border"/>
+            </xpath>
+        </field>
+    </record>  
+</odoo>
